@@ -639,7 +639,8 @@ template {
 }
 
 .slider {
-  width: 450px;
+  width: 728px;
+  height: 450px;
 }
 
 .slider-button {
