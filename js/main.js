@@ -27,14 +27,35 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map(
+      "map",
+      {
+        center: [7.89076, 98.294729],
+        zoom: 17,
+      },
+      {
+        searchControlProvider: "yandex#search",
+      }
+    ),
+    // Создаем геообъект с типом геометрии "Точка".
+    myGeoObject = new ymaps.GeoObject(),
+    myPieChart = new ymaps.Placemark();
 
-// Initialize and add the map
-function initMap() {
-  // The location of Hotel
-  var hotel = { lat: 7.890760, lng: 98.294729 };
-  // The map, centered at Hotel
-  var map = new google.maps.Map(
-    document.getElementById('map'), { zoom: 17, center: hotel });
-  // The marker, positioned at hotel
-  var marker = new google.maps.Marker({ position: hotel, map: map });
+  myMap.geoObjects
+    .add(myGeoObject)
+    .add(myPieChart)
+    .add(
+      new ymaps.Placemark(
+        [7.89076, 98.294729],
+        {
+          balloonContent: "Wellcome to our hotel!",
+          iconCaption: "GRAND HILTON HOTEL",
+        },
+        {
+          preset: "islands#greenDotIconWithCaption",
+        }
+      )
+    );
 }
