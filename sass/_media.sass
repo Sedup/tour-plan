@@ -13,6 +13,14 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-card
+      max-width: 300px
+      &-big
+        max-width: 630px
+    &-hotel
+      &-description
+        margin-bottom: 30px
 @media ( max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -47,6 +55,14 @@
   .booking
     width: 340px
     padding: 29px 22px 26px 23px
+  .packages
+    &-wrapper
+      grid-template-rows: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr
+    &-card
+      max-width: 333px
+      &-big
+        max-width: 700px
   .newsletter
     &-title
       margin-top: 12px
@@ -133,6 +149,16 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-hotel
+      &-description
+        margin-bottom: 10px
+    &-card-big
+      &__description
+        padding: 20px
+    &-card
+      &__description
+        padding: 20px 6px 10px 15px
   .newsletter
     &-wrapper
       max-width: 576px
@@ -184,6 +210,27 @@
       height: 177px
   .map 
     height: 218px
+  .packages
+    &__title
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px
+    &-wrapper
+      grid-template-rows: 1000px 1fr 1fr 1fr 1fr
+      grid-template-columns: 1fr
+      grid-gap: 0
+      grid-row-gap: 30px;
+    &-card
+      grid-column: 1 / 1
+      max-width: 500px
+      &-big
+        flex-direction: column
+        grid-area: 1 / 1 / span 1 / span 2;
+        min-height: 1000px
+        &__photo
+          height: 500px
+        &__description
+          width: 100%
   .newsletter
     margin-top: -5px
     padding: 68px 0 83px 0
