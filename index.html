@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Best Tour Plan - Hotel Booking</title>
-  <script src="icon_customImage.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=3659a53c-253f-411e-8519-d0fd18ff5521&lang=ru_RU"></script>
+  <!-- <script src="icon_customImage.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3659a53c-253f-411e-8519-d0fd18ff5521&lang=ru_RU"></script> -->
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -238,7 +238,7 @@
                 <span class="new-price">
                   $ 8,500
                 </span>
-                <button class="packages-card__button">Book Now</button>
+                <button class="packages-card__button packages-card-big__button">Book Now</button>
               </div>
           </div>
         </div>
@@ -616,11 +616,13 @@
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="Icon: map"></div>
+              <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="Icon: map">
+              </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
             <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: phone call"></div>
+              <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg"
+                  alt="Icon: phone call"></div>
               Tel (business hours) : 269 1500<br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
@@ -638,7 +640,7 @@
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
             <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+            <textarea cols="30" rows="5" class="footer__message" placeholder="Message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -647,6 +649,16 @@
 
       </div>
       <!-- /.footer-wrapper -->
+      <div class="footer-policy">
+        <div class="footer-policy__links">
+          <a href="#" class="footer__link footer__link--down">Disclaimer</a>
+          <a href="#" class="footer__link footer__link--down footer__link--down--center">Conditions of use</a>
+          <a href="#" class="footer__link footer__link--down">Cancellation policy</a>
+        </div>
+        <div class="footer-policy__payment">
+          <img src="img/payment.png" alt="Icons: payment">
+        </div>
+      </div>
     </div>
     <!-- /.container -->
   </footer>
