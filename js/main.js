@@ -17,7 +17,7 @@ var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {
   document
     .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom__mobile-visible");
+    .classList.toggle("navbar-bottom__mobile--visible");
 });
 
 var reviewsSlider = new Swiper(".reviews-slider", {
@@ -37,15 +37,15 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map(
-      "map",
-      {
-        center: [7.89076, 98.294729],
-        zoom: 17,
-      },
-      {
-        searchControlProvider: "yandex#search",
-      }
-    ),
+    "map",
+    {
+      center: [7.89076, 98.294729],
+      zoom: 17,
+    },
+    {
+      searchControlProvider: "yandex#search",
+    }
+  ),
     // Создаем геообъект с типом геометрии "Точка".
     myGeoObject = new ymaps.GeoObject(),
     myPieChart = new ymaps.Placemark();
