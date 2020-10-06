@@ -69,19 +69,34 @@ $(document).ready(function () {
 
   //Обработка форм
 
-  $(".modal__form").validate({
-    messages: {
-      name: {
-        required: "Укажите имя",
-        minlength: "Имя должно быть не менее 2-х букв",
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          // required: "Укажите имя",
+          minlength: "Name must be at least 2 letters",
+        },
+        // phone: {
+        //   required: "Телефон обязателен",
+        // },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
       },
-      phone: {
-        required: "Телефон обязателен",
-      },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com",
-      },
-    },
+    });
   });
+
+
+  // Проверка номера телефона
+
+  $(document).ready(function () {
+    $('.phone_with_ddd').mask('+7 (000) 000-00-00', { selectOnFocus: true });
+  });
+
+  //Анимация
+
+  AOS.init();
+
 });
