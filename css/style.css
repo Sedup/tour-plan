@@ -1925,6 +1925,9 @@ template {
   .footer__message {
     height: 122px;
   }
+  .modal__dialog {
+    width: 470px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2355,6 +2358,17 @@ template {
   }
   .footer__link--down {
     margin-left: -3px;
+  }
+  .modal__dialog {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (max-height: 500px) {
+  .modal__dialog {
+    max-height: 90%;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

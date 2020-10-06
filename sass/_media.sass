@@ -27,7 +27,7 @@
     &__input
       flex-basis: 100%
 @media ( max-width: 992px)
-  .container, 
+  .container,
   .newsletter-wrapper
     max-width: 700px
   .logo
@@ -139,7 +139,7 @@
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
-    &__legal 
+    &__legal
       grid-column: span 2
       padding-left: 19px
     &__additional
@@ -163,6 +163,9 @@
         margin-left: 2px
     &__message
       height: 122px
+  .modal
+    &__dialog
+      width: 470px
 @media ( max-width: 767px)
   .container
     max-width: 576px
@@ -332,7 +335,7 @@
       margin-bottom: 20px
     &-slider
       height: 177px
-  .map 
+  .map
     height: 218px
   .packages
     &__title
@@ -472,11 +475,15 @@
     &__link
       &--down
         margin-left: -3px
-    
-
-  
-  
-
-  
-
-  
+  .modal
+    &__dialog
+      width: 95%
+      padding: 20px
+@media ( max-height: 500px)
+  .modal
+    &__dialog
+      max-height: 90%
+      overflow: auto
+    // &__form
+    //   max-height: 90%
+    //   overflow: auto
