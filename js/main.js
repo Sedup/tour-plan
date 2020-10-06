@@ -16,8 +16,7 @@ $(document).ready(function () {
 
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
-    $(".navbar-bottom")
-      .toggleClass("navbar-bottom__mobile--visible");
+    $(".navbar-bottom").toggleClass("navbar-bottom__mobile--visible");
   });
 
   var reviewsSlider = new Swiper(".reviews-slider", {
@@ -34,39 +33,55 @@ $(document).ready(function () {
     },
   });
 
-  var modalButton = $('[data-toggle=modal]');
+  var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
-  modalButton.on('click', openModal);
-  closeModalButton.on('click', closeModal);
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
   // $(document).keyup(function (e) {
   //   if (e.key === "Escape" || e.keyCode == 27) {
   //     closeModal;
   //   }
   // });
-  $(document).on('keydown', function (e) {
+  $(document).on("keydown", function (e) {
     if (e.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
-      modalOverlay.removeClass('modal__overlay--visible');
-      modalDialog.removeClass('modal__dialog--visible');
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
     }
     // console.log(e.keyCode);
     // closeModal;
   });
 
-
-
   function openModal() {
     var targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass('modal__overlay--visible');
-    $(targetModal).find(".modal__dialog").addClass('modal__dialog--visible');
-  };
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  }
 
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass('modal__overlay--visible');
-    modalDialog.removeClass('modal__dialog--visible');
-  };
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+
+  //Обработка форм
+
+  $(".modal__form").validate({
+    messages: {
+      name: {
+        required: "Укажите имя",
+        minlength: "Имя должно быть не менее 2-х букв",
+      },
+      phone: {
+        required: "Телефон обязателен",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
 });
