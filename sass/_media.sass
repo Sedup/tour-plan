@@ -490,3 +490,16 @@
     // &__form
     //   max-height: 90%
     //   overflow: auto
+
+@media  ( max-height: 520px )
+  .navbar
+    &-menu
+      display: grid
+      grid-template-rows: 1fr
+      grid-template-columns: 1fr 1fr
+      &__item
+        text-align: center
+        margin-top: 10px
+        margin-bottom: 10px
+    &-bottom
+      padding-top: 10px
