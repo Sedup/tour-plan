@@ -1797,6 +1797,9 @@ template {
     width: 340px;
     padding: 29px 22px 26px 23px;
   }
+  .rating {
+    margin-top: 8px;
+  }
   .packages-wrapper {
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -1840,6 +1843,7 @@ template {
   }
   .activities {
     padding-top: 50px;
+    margin-left: -38px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1855,7 +1859,7 @@ template {
     padding-right: 140px;
   }
   .footer {
-    padding-top: 80px;
+    padding-top: 40px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
@@ -1864,8 +1868,8 @@ template {
     grid-column-gap: 20px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1873,9 +1877,6 @@ template {
     grid-row: 1 / 2;
     grid-column: span 2;
     width: 98px;
-  }
-  .footer__title--mb-3 {
-    margin-top: 35px;
   }
   .footer__text {
     margin-bottom: 19px;
@@ -1900,7 +1901,7 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
     margin-left: -52px;
-    margin-top: 6px;
+    margin-top: 47px;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1920,6 +1921,7 @@ template {
     grid-column: span 5;
     -ms-grid-row: 3;
     grid-row: 3;
+    margin-top: 10px;
   }
   .footer__contact-form {
     grid-column: span 6;
@@ -2168,6 +2170,9 @@ template {
     margin-top: 4px;
     margin-right: -5px;
   }
+  .breadcrumb {
+    margin-top: -5px;
+  }
   .hotel {
     padding-top: 0;
     padding-bottom: 0;
@@ -2180,6 +2185,9 @@ template {
   }
   .hotel-slider {
     height: 177px;
+  }
+  .swiper-container {
+    padding-left: 0;
   }
   .map {
     height: 218px;
@@ -2245,7 +2253,7 @@ template {
     padding-left: 20px;
   }
   .stars {
-    padding-right: 11px;
+    padding-right: 17px;
   }
   .subscribe {
     width: 100%;
@@ -2279,6 +2287,7 @@ template {
   .activities {
     padding-top: 20px;
     padding-bottom: 40px;
+    margin-left: 0px;
   }
   .activities__title {
     font-size: 18px;
@@ -2338,7 +2347,7 @@ template {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: -25px;
+    margin-top: 10px;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
