@@ -409,7 +409,10 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-        <input name="newEmail" type="email" class="subscribe__input" placeholder="Your email address" required />
+        <div class="subscribe__input--group">
+          <input name="newEmail" type="email" class="subscribe__input" placeholder="Your email address" required />
+        </div>
+        <!-- <input name="newEmail" type="email" class="subscribe__input" placeholder="Your email address" required /> -->
         <button class="subscribe__button">Send</button>
       </form>
     </div>
