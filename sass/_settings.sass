@@ -53,3 +53,21 @@ label.invalid
   font-size: 14px
   padding-left: 3px
   position: absolute
+button
+  position: relative
+  transition: all 1s ease
+button:hover
+  color: $dark
+  background-color: tomato
+a
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+a:hover
+  &:before
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 2px
+    background: $primary
