@@ -82,25 +82,23 @@ $(document).ready(function () {
         // },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Please enter a valid e-mail adress",
         },
         newEmail: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Please enter a valid e-mail adress",
         },
       },
     });
   });
 
-
   // Проверка номера телефона
 
   $(document).ready(function () {
-    $('.phone_with_ddd').mask('+7 (000) 000-00-00', { selectOnFocus: true });
+    $(".phone_with_ddd").mask("+7 (000) 000-00-00", { selectOnFocus: true });
   });
 
   //Анимация
 
   AOS.init();
-
 });
