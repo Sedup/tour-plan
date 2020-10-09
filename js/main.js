@@ -101,4 +101,5 @@ $(document).ready(function () {
   //Анимация
 
   AOS.init();
+
 });
