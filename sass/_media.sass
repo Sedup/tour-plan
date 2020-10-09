@@ -344,6 +344,13 @@
       margin-bottom: 20px
     &-slider
       height: 177px
+      &__button
+        &--prev
+          background-size: 4px
+          left: -3px
+        &--next
+          background-size: 4px
+          right: -3px
   .swiper
     &-container
       padding-left: 0
@@ -390,6 +397,8 @@
   .subscribe
     &__input
       padding-left: 20px
+  label.invalid
+    font-size: 13px
   .stars
     padding-right: 17px
   .subscribe
@@ -405,6 +414,8 @@
         margin-left: -89px
       &__button--next
         margin-right: -91px
+      &__text
+        text-align: left
     &__title
       font-size: 18px
       line-height: 23px
@@ -492,6 +503,13 @@
     &__dialog
       width: 95%
       padding: 20px
+  .title
+    &-info
+      font-size: 21px
+      text-align: center
+      &__link, &__text
+        display: block
+        text-align: center
 @media ( max-height: 500px)
   .modal
     &__dialog

@@ -85,7 +85,7 @@ $(document).ready(function () {
           email: "Please enter a valid e-mail adress",
         },
         newEmail: {
-          required: "We need your email address to contact you",
+          required: "Please enter e-mail adress",
           email: "Please enter a valid e-mail adress",
         },
       },
@@ -100,6 +100,10 @@ $(document).ready(function () {
 
   //Анимация
 
-  AOS.init();
+  AOS.init(
+    {
+      disable: 'mobile',
+    }
+  );
 
 });

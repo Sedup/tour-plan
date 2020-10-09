@@ -83,6 +83,11 @@ button:hover {
   background-color: tomato;
 }
 
+button:focus {
+  color: #fff;
+  background-color: #EC1F46;
+}
+
 a {
   position: relative;
 }
@@ -908,7 +913,7 @@ template {
   overflow: hidden;
 }
 
-.iframe__map {
+.iframe-map {
   width: 100%;
   height: 100%;
 }
@@ -1722,6 +1727,11 @@ template {
 
 .modal__input {
   width: 100%;
+}
+
+.modal__input-group {
+  position: relative;
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -2233,6 +2243,14 @@ template {
   .hotel-slider {
     height: 177px;
   }
+  .hotel-slider__button--prev {
+    background-size: 4px;
+    left: -3px;
+  }
+  .hotel-slider__button--next {
+    background-size: 4px;
+    right: -3px;
+  }
   .swiper-container {
     padding-left: 0;
   }
@@ -2299,6 +2317,9 @@ template {
   .subscribe__input {
     padding-left: 20px;
   }
+  label.invalid {
+    font-size: 13px;
+  }
   .stars {
     padding-right: 17px;
   }
@@ -2317,6 +2338,9 @@ template {
   }
   .reviews-slider__button--next {
     margin-right: -91px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .reviews__title {
     font-size: 18px;
@@ -2435,6 +2459,14 @@ template {
   .modal__dialog {
     width: 95%;
     padding: 20px;
+  }
+  .title-info {
+    font-size: 21px;
+    text-align: center;
+  }
+  .title-info__link, .title-info__text {
+    display: block;
+    text-align: center;
   }
 }
 
