@@ -2342,7 +2342,7 @@ template {
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 44px;
+    margin: 15px auto 44px;
     width: 273px;
   }
   .card {
